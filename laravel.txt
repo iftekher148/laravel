@@ -2,3 +2,4 @@ create project:composer create-project laravel/laravel example-app(project_name)
 run:php artisan serve
 
 https://www.tutussfunny.com/laravel-8-crud-application/
+http://gg. gg/42weblab
