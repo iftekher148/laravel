@@ -1,0 +1,38 @@
+seeder----use for test
+-----------------------
+cmd:php artisan make:seeder PostTableName(seeder name)
+      database/seeder/PostTableName
+PostTableName.php
+          $post=[
+      		['id'=>1,'title'=>'hello','status'=>'hello']
+		['id'=>1,'title'=>'hello','status'=>'hello']
+		['id'=>1,'title'=>'hello','status'=>'hello']
+
+         ];
+     Post::insert($post)--->from Model,So declear the path(use App\Models\Post)
+
+DataBase Seeder: this->call(PostTableName::class);seeder_name
+last step:
+cmd:php artisan db:seed
+
+----------------------
+facker::
+--------
+goto-> Table(post)Model:app\Models
+    protected $fillable=['title','status','des'];
+
+2nd: create factory
+cmd: php artisan make:factory PostFactory(factoryName) -- model=Post(tableNAme)
+goto->factory:database/factory
+    use tihs namespace:use Illuminate\Support\Str;
+    function defination(){
+   'title'=>$this->facker->text(30)
+   'status'=>$this->facker->text(30)
+   'description'=>$this->facker->text(30)
+   'title'=>$this->facker->text(30)
+
+}
+
+cmd:composer dump-autoload
+    php artisan tinker
+    Post(ModelName)::factory()->count(50)->create()
