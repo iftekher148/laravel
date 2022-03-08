@@ -7,3 +7,5 @@ http://gg. gg/42weblab
 git clone.
 change db_name(.env)
 composer install(to unlock the composer file (vendor))
+
+https://www.youtube.com/watch?v=U6K3V0nQ2Lw
