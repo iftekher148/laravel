@@ -3,3 +3,7 @@ run:php artisan serve
 
 https://www.tutussfunny.com/laravel-8-crud-application/
 http://gg. gg/42weblab
+
+git clone.
+change db_name(.env)
+composer install(to unlock the composer file (vendor))
